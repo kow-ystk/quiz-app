@@ -1,18 +1,28 @@
 const quiz = [
   {
-    question: "クイズ1の正解はどれ？",
-    choices: ["1", "2", "3", "4"],
-    answer: "1",
+    question: "アイスランドの首都はどれ？",
+    choices: ["レイキャビク", "アークレイリ", "ケプラビーク", "へプン"],
+    answer: "レイキャビク",
   },
   {
-    question: "クイズ2の正解はどれ？",
-    choices: ["1", "2", "3", "4"],
-    answer: "1",
+    question: "スウェーデンの首都はどれ？",
+    choices: ["ヨーテボリ", "ストックホルム", "マルメ", "ウプサラ"],
+    answer: "ストックホルム",
   },
   {
-    question: "クイズ3の正解はどれ？",
-    choices: ["1", "2", "3", "4"],
-    answer: "1",
+    question: "デンマークの首都はどれ？",
+    choices: ["オーゼンセ", "オーフス", "ビルン", "コペンハーゲン"],
+    answer: "コペンハーゲン",
+  },
+  {
+    question: "フィンランドの首都はどれ？",
+    choices: ["タンペレ", "トゥルク", "オウル", "ヘルシンキ"],
+    answer: "ヘルシンキ",
+  },
+  {
+    question: "ノルウェーの首都はどれ？",
+    choices: ["オスロ", "ベルゲン", "トロンハイム", "スタヴァンゲル"],
+    answer: "オスロ",
   },
 ];
 
@@ -27,7 +37,7 @@ let quizCount = 0;
 let score = 0;
 
 const init = () => {
-  $question.textContent = quiz[quizCount].question;
+  $question.textContent = `問題${quizCount + 1}:${quiz[quizCount].question}`;
 
   const buttonLen = $buttons.length;
   let btnIndex = 0;
@@ -50,10 +60,14 @@ const goToNext = () => {
 
 const judge = (elm) => {
   if (elm.textContent === quiz[quizCount].answer) {
-    $answer.textContent = `正解！答えは${quiz[quizCount].answer}です`;
+    $answer.textContent = `正解！問題${quizCount + 1}の答えは${
+      quiz[quizCount].answer
+    }です`;
     score++;
   } else {
-    $answer.textContent = `残念！不正解...答えは${quiz[quizCount].answer}です`;
+    $answer.textContent = `残念！不正解...問題${quizCount + 1}の答えは${
+      quiz[quizCount].answer
+    }です`;
   }
   goToNext();
 };

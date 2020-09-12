@@ -5,22 +5,41 @@ body {
 
 .quiz {
   background: #f1f1f1;
+  font-size: 1.6rem;
+  color: #333;
 }
 
 .quiz__wrapper {
   margin: 0 auto;
   padding: 20px;
-  width: 300px;
-  height: 300px;
-  background-color: #ff0;
+  width: 90%;
+  max-width: 960px;
+  background-color: #9dd2ac;
 }
 
 .quizTitle {
-  background: #f1f1f1;
+  background: #bce2e8;
   font-size: 2rem;
 }
 
 .quizContents {
   padding: 10px;
-  background-color: #fff;
+  background-color: #c3e8a1;
+}
+
+.quizContents__choices {
+  border: none;
+  background-color: #bce2e8;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.quizContents__choices:hover {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #0000ff;
+}
+
+.quizContents__choices:focus {
+  outline-style: none;
 }
