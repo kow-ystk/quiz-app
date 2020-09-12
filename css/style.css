@@ -3,7 +3,11 @@ body {
   text-align: center;
 }
 
-main {
+.quiz {
+  background: #f1f1f1;
+}
+
+.quiz__wrapper {
   margin: 0 auto;
   padding: 20px;
   width: 300px;
@@ -11,7 +15,12 @@ main {
   background-color: #ff0;
 }
 
-h1 {
+.quizTitle {
   background: #f1f1f1;
   font-size: 2rem;
+}
+
+.quizContents {
+  padding: 10px;
+  background-color: #fff;
 }
