@@ -37,15 +37,6 @@ html {
   background-color: #bce2e8;
   font-size: 2rem;
   color: #333;
-}
-
-.quizContents__choices:hover {
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: #0000ff;
-}
-
-.quizContents__choices:focus {
   outline-style: none;
 }
 
