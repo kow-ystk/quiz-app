@@ -37,7 +37,7 @@ let quizCount = 0;
 let score = 0;
 
 const init = () => {
-  $question.textContent = quiz[quizCount].question;
+  $question.textContent = `問題${quizCount + 1}:${quiz[quizCount].question}`;
 
   const buttonLen = $buttons.length;
   let btnIndex = 0;
@@ -60,10 +60,14 @@ const goToNext = () => {
 
 const judge = (elm) => {
   if (elm.textContent === quiz[quizCount].answer) {
-    $answer.textContent = `正解！答えは${quiz[quizCount].answer}です`;
+    $answer.textContent = `正解！問題${quizCount + 1}の答えは${
+      quiz[quizCount].answer
+    }です`;
     score++;
   } else {
-    $answer.textContent = `残念！不正解...答えは${quiz[quizCount].answer}です`;
+    $answer.textContent = `残念！不正解...問題${quizCount + 1}の答えは${
+      quiz[quizCount].answer
+    }です`;
   }
   goToNext();
 };
