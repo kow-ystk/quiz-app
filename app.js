@@ -45,7 +45,7 @@ let score = 0;
 const init = () => {
   $question.textContent = `問題${quizCount + 1}:${quiz[quizCount].question}`;
 
-  $image.innerHTML = `<img src='${quiz[quizCount].image}' alt='の写真'>`;
+  $image.innerHTML = `<img class="quizImage__capitalImg" src='${quiz[quizCount].image}' alt='首都の写真'>`;
 
   const buttonLen = $buttons.length;
   let btnIndex = 0;

@@ -54,3 +54,8 @@ html {
   margin: 0 auto;
   padding: 20px 0;
 }
+
+.quizImage__capitalImg {
+  display: block;
+  width: 100%;
+}
