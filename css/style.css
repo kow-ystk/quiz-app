@@ -43,3 +43,10 @@ body {
 .quizContents__choices:focus {
   outline-style: none;
 }
+
+.quizImage {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
