@@ -3,31 +3,31 @@ const quiz = [
     question: "アイスランドの首都はどれ？",
     choices: ["レイキャビク", "アークレイリ", "ケプラビーク", "へプン"],
     answer: "レイキャビク",
-    image: "/images/reykjavik.jpg",
+    image: "https://kow-ystk.github.io/quiz-app/images/reykjavik.jpg",
   },
   {
     question: "スウェーデンの首都はどれ？",
     choices: ["ヨーテボリ", "ストックホルム", "マルメ", "ウプサラ"],
     answer: "ストックホルム",
-    image: "/images/stockholm.jpg",
+    image: "https://kow-ystk.github.io/quiz-app/images/stockholm.jpg",
   },
   {
     question: "デンマークの首都はどれ？",
     choices: ["オーゼンセ", "オーフス", "ビルン", "コペンハーゲン"],
     answer: "コペンハーゲン",
-    image: "/images/copenhagen.jpg",
+    image: "https://kow-ystk.github.io/quiz-app/images/copenhagen.jpg",
   },
   {
     question: "フィンランドの首都はどれ？",
     choices: ["タンペレ", "トゥルク", "オウル", "ヘルシンキ"],
     answer: "ヘルシンキ",
-    image: "/images/helsinki.jpg",
+    image: "https://kow-ystk.github.io/quiz-app/images/helsinki.jpg",
   },
   {
     question: "ノルウェーの首都はどれ？",
     choices: ["オスロ", "ベルゲン", "トロンハイム", "スタヴァンゲル"],
     answer: "オスロ",
-    image: "/images/oslo.jpg",
+    image: "https://kow-ystk.github.io/quiz-app/images/oslo.jpg",
   },
 ];
 
