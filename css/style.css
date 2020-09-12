@@ -51,3 +51,15 @@ html {
   display: block;
   width: 100%;
 }
+
+.quiz__start,
+.quiz__wrapper,
+.quiz__end {
+  display: none;
+}
+
+.quiz__start--active,
+.quiz__wrapper--active,
+.quiz__end--active {
+  display: block;
+}

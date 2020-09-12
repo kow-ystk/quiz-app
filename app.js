@@ -39,9 +39,23 @@ const $buttons = $doc.querySelectorAll('[data-js="js-btn"]');
 const $image = $doc.querySelector('[data-js="js-image"]');
 const $contents = $doc.querySelector('[data-js="js-contents"]');
 
+const $start = $doc.querySelector('[data-js="js-start"]');
+const $wrapper = $doc.querySelector('[data-js="js-wrapper"]');
+const $end = $doc.querySelector('[data-js="js-end"]');
+
+const $startBtn = $doc.querySelector('[data-js="js-startBtn"]');
+const $retryBtn = $doc.querySelector('[data-js="js-retryBtn"]');
+
 const quizLen = quiz.length;
 let quizCount = 0;
 let score = 0;
+
+const startGame = () => {
+  $start.classList.remove("quiz__start--active");
+  $start.classList.add("quiz__start");
+
+  $wrapper.classList.add("quiz__wrapper--active");
+};
 
 const init = () => {
   $question.textContent = `問題${quizCount + 1}:${
@@ -88,17 +102,24 @@ const showEnd = () => {
     (score / quizLen) * 100
   )}です`;
 
-  $image.innerHTML = "";
+  $wrapper.classList.remove("quiz__wrapper--active");
+  $wrapper.classList.add("quiz__wrapper");
 
-  $contents.innerHTML = "";
-
-  $answer.textContent = "";
+  $end.classList.add("quiz__end--active");
 
   const $items = $doc.getElementById("js-items");
   $items.style.visibility = "hidden";
 };
 
+const reload = () => {
+  document.location.reload();
+};
+
+$startBtn.addEventListener("click", startGame);
+
 init();
+
+$retryBtn.addEventListener("click", reload);
 
 let choicesIndex = 0;
 let choicesLen = quiz[quizCount].choices.length;
