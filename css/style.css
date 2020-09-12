@@ -1,11 +1,11 @@
-body {
+html {
   font-size: 62.5%;
   text-align: center;
 }
 
 .quiz {
   background: #f1f1f1;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #333;
 }
 
@@ -19,18 +19,22 @@ body {
 
 .quizTitle {
   background: #bce2e8;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 .quizContents {
+  margin: 0 auto;
+  width: 80%;
   padding: 10px;
   background-color: #c3e8a1;
 }
 
 .quizContents__choices {
+  display: block;
+  margin-top: 10px;
   border: none;
   background-color: #bce2e8;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #333;
 }
 
