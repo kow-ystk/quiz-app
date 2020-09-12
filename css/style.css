@@ -31,7 +31,7 @@ html {
 
 .quizContents__choices {
   display: block;
-  margin-top: 10px;
+  margin: 10px auto 0;
   border: none;
   background-color: #bce2e8;
   font-size: 2rem;
