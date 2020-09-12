@@ -1,30 +1,30 @@
 const quiz = [
   {
-    question: "アイスランドの首都はどれ？",
+    question: "アイスランド",
     choices: ["レイキャビク", "アークレイリ", "ケプラビーク", "へプン"],
     answer: "レイキャビク",
     image: "https://kow-ystk.github.io/quiz-app/images/reykjavik.jpg",
   },
   {
-    question: "スウェーデンの首都はどれ？",
+    question: "スウェーデン",
     choices: ["ヨーテボリ", "ストックホルム", "マルメ", "ウプサラ"],
     answer: "ストックホルム",
     image: "https://kow-ystk.github.io/quiz-app/images/stockholm.jpg",
   },
   {
-    question: "デンマークの首都はどれ？",
+    question: "デンマーク",
     choices: ["オーゼンセ", "オーフス", "ビルン", "コペンハーゲン"],
     answer: "コペンハーゲン",
     image: "https://kow-ystk.github.io/quiz-app/images/copenhagen.jpg",
   },
   {
-    question: "フィンランドの首都はどれ？",
+    question: "フィンランド",
     choices: ["タンペレ", "トゥルク", "オウル", "ヘルシンキ"],
     answer: "ヘルシンキ",
     image: "https://kow-ystk.github.io/quiz-app/images/helsinki.jpg",
   },
   {
-    question: "ノルウェーの首都はどれ？",
+    question: "ノルウェー",
     choices: ["オスロ", "ベルゲン", "トロンハイム", "スタヴァンゲル"],
     answer: "オスロ",
     image: "https://kow-ystk.github.io/quiz-app/images/oslo.jpg",
@@ -44,7 +44,9 @@ let quizCount = 0;
 let score = 0;
 
 const init = () => {
-  $question.textContent = `問題${quizCount + 1}:${quiz[quizCount].question}`;
+  $question.textContent = `問題${quizCount + 1}:${
+    quiz[quizCount].question
+  }の首都はどれ？`;
 
   $image.innerHTML = `<img class="quizImage__capitalImg" src='${quiz[quizCount].image}' alt='首都の写真'>`;
 
