@@ -37,6 +37,7 @@ const $question = $doc.querySelector('[data-js="js-question"]');
 const $answer = $doc.querySelector('[data-js="js-answer"]');
 const $buttons = $doc.querySelectorAll('[data-js="js-btn"]');
 const $image = $doc.querySelector('[data-js="js-image"]');
+const $contents = $doc.querySelector('[data-js="js-contents"]');
 
 const quizLen = quiz.length;
 let quizCount = 0;
@@ -84,6 +85,12 @@ const showEnd = () => {
   $question.textContent = `終了！あなたのスコアは ${Math.floor(
     (score / quizLen) * 100
   )}です`;
+
+  $image.innerHTML = "";
+
+  $contents.innerHTML = "";
+
+  $answer.textContent = "";
 
   const $items = $doc.getElementById("js-items");
   $items.style.visibility = "hidden";
