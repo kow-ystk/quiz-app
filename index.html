@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>quiz-app</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header></header>
+    <main class="quiz">
+      <div class="quiz__wrapper">
+        <h1 class="quizTitle">quiz-app</h1>
+        <div data-js="js-question" class="quizQuestion">Question</div>
+        <div class="quizContents">
+          <button type="button" data-js="js-btn" class="quizContents__choices">
+            a
+          </button>
+          <button type="button" data-js="js-btn" class="quizContents__choices">
+            b
+          </button>
+          <button type="button" data-js="js-btn" class="quizContents__choices">
+            c
+          </button>
+          <button type="button" data-js="js-btn" class="quizContents__choices">
+            d
+          </button>
+        </div>
+        <div data-js="js-answer" class="quizAnswer"></div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="app.js"></script>
+</html>
