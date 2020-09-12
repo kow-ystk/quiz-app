@@ -74,6 +74,7 @@ const init = () => {
 };
 
 const goToNext = () => {
+  $answer.textContent = "";
   quizCount++;
   if (quizCount < quizLen) {
     init(quizCount);
@@ -94,7 +95,7 @@ const judge = (elm) => {
       quiz[quizCount].answer
     }です`;
   }
-  goToNext();
+  setTimeout("goToNext()", 5000);
 };
 
 const showEnd = () => {
