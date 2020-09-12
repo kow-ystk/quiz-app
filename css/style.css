@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  font-family: sans-serif;
   text-align: center;
 }
 
@@ -36,16 +37,15 @@ html {
   background-color: #bce2e8;
   font-size: 2rem;
   color: #333;
-}
-
-.quizContents__choices:hover {
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: #0000ff;
-}
-
-.quizContents__choices:focus {
   outline-style: none;
+}
+
+.quizContents__choices--correct {
+  font-weight: bold;
+}
+
+.quizContents__choices--incorrect {
+  text-decoration: line-through;
 }
 
 .quizImage {
@@ -58,4 +58,16 @@ html {
 .quizImage__capitalImg {
   display: block;
   width: 100%;
+}
+
+.quiz__start,
+.quiz__wrapper,
+.quiz__end {
+  display: none;
+}
+
+.quiz__start--active,
+.quiz__wrapper--active,
+.quiz__end--active {
+  display: block;
 }

@@ -7,13 +7,22 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header></header>
     <main class="quiz">
-      <div class="quiz__wrapper">
-        <h1 class="quizTitle">首都を当ててみよう！</h1>
-        <div data-js="js-question" class="quizQuestion">Question</div>
+      <h1 class="quizTitle">首都を当ててみよう！</h1>
+      <!-- クイズ開始前のみ表示 -->
+      <div data-js="js-start" class="quiz__start--active quizStart">
+        <button type="button" data-js="js-startBtn" class="quizStart__startBtn">
+          START!
+        </button>
+      </div>
+      <!-- クイズ中のみ表示 -->
+      <div data-js="js-wrapper" class="quiz__wrapper">
+        <!-- 問題 -->
+        <div data-js="js-question" class="quizQuestion"></div>
+        <!-- 画像 -->
         <div data-js="js-image" class="quizImage"></div>
-        <div class="quizContents">
+        <!-- 選択肢 -->
+        <div data-js="js-contents" class="quizContents">
           <button type="button" data-js="js-btn" class="quizContents__choices">
             a
           </button>
@@ -27,10 +36,17 @@
             d
           </button>
         </div>
+        <!-- 正解 -->
         <div data-js="js-answer" class="quizAnswer"></div>
       </div>
+      <!-- クイズ終了後のみ表示 -->
+      <div data-js="js-end" class="quiz__end quizEnd">
+        <p data-js="js-endTxt" class="quizEnd__txt"></p>
+        <button type="button" data-js="js-retryBtn" class="quiz__retryBtn">
+          もう一度挑戦する!
+        </button>
+      </div>
     </main>
-    <footer></footer>
   </body>
   <script src="app.js"></script>
 </html>
