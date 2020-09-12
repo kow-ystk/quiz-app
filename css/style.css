@@ -40,6 +40,14 @@ html {
   outline-style: none;
 }
 
+.quizContents__choices--correct {
+  font-weight: bold;
+}
+
+.quizContents__choices--incorrect {
+  text-decoration: line-through;
+}
+
 .quizImage {
   display: block;
   width: 80%;
