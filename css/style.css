@@ -30,6 +30,13 @@ html {
   background-color: #c3e8a1;
 }
 
+.quizStart,
+.quiz__end {
+  padding: 20px 0;
+}
+
+.quizStart__startBtn,
+.quiz__retryBtn,
 .quizContents__choices {
   display: block;
   margin: 10px auto 0;
